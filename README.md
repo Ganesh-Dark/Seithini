@@ -37,4 +37,5 @@ The data collection and categorization system is set up. It collects and categor
 
 1. Build the web interface for readers.
 2. Set up automated daily ingestion.
-3. Deploy to a public domain.
+3. Automatically classify incoming articles into standardized topics.
+4. Deploy to a public domain.

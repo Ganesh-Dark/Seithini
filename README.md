@@ -1,52 +1,40 @@
 # Seithini (செய்தினி)
 
-Seithini collects daily news from major Tamil and English newspapers across Tamil Nadu, organizes them in one place, and helps you stay updated without opening multiple websites.
+Seithini is an idea for a web platform to read daily Tamil Nadu news from multiple newspapers in one place, organized by topic.
+
+Instead of opening multiple news websites or apps every day, the goal is to provide a clean web interface where readers can find all major state stories organized into everyday topics.
 
 ---
 
-## Why Seithini?
+## Current State
 
-Checking news across different Tamil Nadu newspapers usually means visiting multiple websites or apps one by one. Seithini pulls the latest stories from top dailies into a single clean list in just a few seconds.
+The data collection and categorization system is set up. It collects and categorizes news stories from 15 major Tamil and English publications.
 
-### Newspapers Covered:
-- **Tamil:** Daily Thanthi, Dinamani, Maalai Malar, Dinamalar
-- **English:** The Hindu, The New Indian Express, DT Next
+### Newspapers Covered
 
----
+#### Tamil (9 Sources)
+- Daily Thanthi (தினத்தந்தி)
+- Dinamani (தினமணி)
+- Maalai Malar (மாலை மலர்)
+- Dinamalar (தினமலர்)
+- Hindu Tamil Thisai (இந்து தமிழ் திசை)
+- Dinakaran (தினகரன்)
+- Puthiyathalaimurai (புதிய தலைமுறை)
+- Vikatan (விகடன்)
+- BBC News Tamil (பிபிசி தமிழ்)
 
-## How It Works
-
-Instead of scraping web pages that break often, Seithini connects directly to the official feeds and APIs used by these newspapers:
-
-| Newspaper | Language | Source Type |
-| :--- | :--- | :--- |
-| **Daily Thanthi** | Tamil | Official JSON API |
-| **Dinamani** | Tamil | Official JSON API |
-| **Maalai Malar** | Tamil | Official JSON API |
-| **Dinamalar** | Tamil | News Feed |
-| **The Hindu** | English | News Feed |
-| **The New Indian Express** | English | Official JSON API |
-| **DT Next** | English | Official JSON API |
-
-Each collected story includes the headline, a brief summary, the publication date, and a direct link to read the original article on the publisher's site.
-
----
-
-## Quick Start
-
-Make sure you have `uv` installed, then run:
-
-```bash
-uv run generate_news_excel.py
-```
-
-This collects around 350+ fresh stories across all 7 newspapers in a few seconds.
+#### English (6 Sources)
+- The Hindu
+- The New Indian Express
+- DT Next
+- The Times of India (Chennai)
+- The Indian Express
+- The News Minute
 
 ---
 
-## What We Are Building Next
+## Next Steps
 
-1. **Daily Archive:** Save each day's news into a simple database so past news is kept safe and duplicates are ignored.
-2. **Topic Grouping:** Automatically sort stories into everyday topics like Politics, Cinema, Weather, and Sports.
-3. **Ask Seithini (AI Chat):** A helpful chatbot where you can ask everyday questions like *"What happened in Chennai today?"* or *"இன்றைய மழை நிலவரம் என்ன?"* in plain Tamil or English and get direct answers with links to the original papers.
-4. **Website:** Host this on a clean website with a custom domain so anyone can read it easily from their phone or laptop.
+1. Build the web interface for readers.
+2. Set up automated daily ingestion.
+3. Deploy to a public domain.

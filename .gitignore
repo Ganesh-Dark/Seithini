@@ -1,4 +1,3 @@
-# Python-generated files
 __pycache__/
 *.py[oc]
 build/
@@ -6,11 +5,19 @@ dist/
 wheels/
 *.egg-info
 
-# Virtual environments
+
 .venv
 .env
 .env.example
 *.zip
 /Iubmb
+/others
 *.xlsx#
+*.csv#
 .python-version
+.py
+*.sh
+*.csv
+*.log
+*.session
+*.json
